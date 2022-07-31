@@ -5,7 +5,7 @@ const app = express();
 app.use (bodyparser.urlencoded({extended: true}));
 
 app.get ("/bmicalculator", function(req,res){
-	res.sendfile(__dirname + "/" + "bmi.html");
+	res.sendFile(__dirname + "/" + "bmi.html");
 });
 
 app.post ("/bmicalculator",function(req,res){
